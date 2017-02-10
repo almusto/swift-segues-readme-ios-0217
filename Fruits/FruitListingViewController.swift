@@ -43,7 +43,7 @@ extension FruitListingViewController {
         if segue.identifier != "ShowFruitDetails" { return }
         if let dest = segue.destination as? FruitViewController,
                let indexPath = tableView.indexPathForSelectedRow {
-            dest.fruit = fruits[(indexPath as NSIndexPath).row]
+            dest.fruit = fruits[indexPath.row]
         }
     }
 }
